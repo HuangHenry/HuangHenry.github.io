@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 # 个人博客
 
 ---
@@ -17,4 +29,5 @@ $\alpha$
 $$c^2=a^2+b^2$$
 
 ## website url
-personal blog [https://huanghenry.github.io/]
+
+[personal blog](https://huanghenry.github.io/])
