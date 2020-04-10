@@ -18,9 +18,8 @@ hello everyone, I am Huang Henry. This is my personal blog. Welcome to my websit
 
 ## test math formula
 
-$\alpha$
-
 $$c^2=a^2+b^2$$
+$$E=mc^2$$
 
 ## latex link
 
@@ -31,4 +30,3 @@ github page [支持 Latex 公式](https://zhuanlan.zhihu.com/p/36302775)
 ## Contact me
 
 - Blog -> <https://huanghenry.github.io/>
-
