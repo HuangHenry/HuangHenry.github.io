@@ -33,3 +33,4 @@ github page [支持 Latex 公式](https://zhuanlan.zhihu.com/p/36302775)
 - Blog -> <https://huanghenry.github.io/>
 
 ## config file
+git@github.com:HuangHenry/HuangHenry.github.io.git
