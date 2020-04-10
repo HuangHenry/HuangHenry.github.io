@@ -10,17 +10,12 @@
     </script>
 </head>
 
-# 个人博客
+
+# [**Blogs** ](https://huanghenry.github.io/)
 
 ---
 
-<p> hello 大家好</p>
-<p>我是Huang Henry, 这是我的个人网站</p>
-<p>很高兴你来到这里，你可以在网站找到我</p>
-
-## welcome to my website
-
-## Hello World 我爱这个世界。
+hello everyone, I am Huang Henry. This is my personal blog. Welcome to my website, hope you will enjoy it!
 
 ## test math formula
 
@@ -28,6 +23,12 @@ $\alpha$
 
 $$c^2=a^2+b^2$$
 
-## website url
+## latex link
 
-[personal blog](https://huanghenry.github.io/)
+## add math latex support in github page
+
+github page [支持 Latex 公式](https://zhuanlan.zhihu.com/p/36302775)
+
+## Contact me
+
+- Blog -> <https://huanghenry.github.io/>
