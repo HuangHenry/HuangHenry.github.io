@@ -10,8 +10,7 @@
     </script>
 </head>
 
-
-# [**Blogs** ](https://huanghenry.github.io/)
+# [**Blogs**](https://huanghenry.github.io/)
 
 ---
 
