@@ -31,3 +31,5 @@ github page [支持 Latex 公式](https://zhuanlan.zhihu.com/p/36302775)
 ## Contact me
 
 - Blog -> <https://huanghenry.github.io/>
+
+## config file
