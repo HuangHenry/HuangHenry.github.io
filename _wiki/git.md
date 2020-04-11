@@ -9,7 +9,7 @@ keywords: Git, 版本控制
 ## 常用命令
 
 | 功能                      | 命令                                  |
-|:--------------------------|:--------------------------------------|
+| :------------------------ | :------------------------------------ |
 | 添加文件/更改到暂存区     | git add filename                      |
 | 添加所有文件/更改到暂存区 | git add .                             |
 | 提交                      | git commit -m msg                     |
@@ -22,7 +22,7 @@ keywords: Git, 版本控制
 | 比较工作区和版本库        | git diff HEAD                         |
 | 从暂存区移除文件          | git reset HEAD filename               |
 | 查看本地远程仓库配置      | git remote -v                         |
-| 回滚                      | git reset --hard 提交SHA              |
+| 回滚                      | git reset --hard 提交 SHA             |
 | 强制推送到远程仓库        | git push -f origin master             |
 | 修改上次 commit           | git commit --amend                    |
 | 推送 tags 到远程仓库      | git push --tags                       |
@@ -34,9 +34,9 @@ keywords: Git, 版本控制
 
 ## Q&A
 
-### 如何解决gitk中文乱码，git ls-files 中文文件名乱码问题？
+### 如何解决 gitk 中文乱码，git ls-files 中文文件名乱码问题？
 
-在~/.gitconfig中添加如下内容
+在~/.gitconfig 中添加如下内容
 
 ```
 [core]
@@ -88,9 +88,10 @@ git merge upstream/master
 ```
 
 ### 如何通过 TortoiseSVN 带的 TortoiseMerge.exe 处理 git 产生的 conflict？
-* 将 TortoiseMerge.exe 所在路径添加到 `path` 环境变量。
-* 运行命令 `git config --global merge.tool tortoisemerge` 将 TortoiseMerge.exe 设置为默认的 merge tool。
-* 在产生 conflict 的目录运行 `git mergetool`，TortoiseMerge.exe 会跳出来供你 resolve conflict。
+
+- 将 TortoiseMerge.exe 所在路径添加到 `path` 环境变量。
+- 运行命令 `git config --global merge.tool tortoisemerge` 将 TortoiseMerge.exe 设置为默认的 merge tool。
+- 在产生 conflict 的目录运行 `git mergetool`，TortoiseMerge.exe 会跳出来供你 resolve conflict。
 
   > 也可以运行 `git mergetool -t vimdiff` 使用 `-t` 参数临时指定一个想要使用的 merge tool。
 
@@ -194,7 +195,7 @@ git clean
 可选项：
 
 | 选项                    | 含义                             |
-|-------------------------|----------------------------------|
+| ----------------------- | -------------------------------- |
 | -q, --quiet             | 不显示删除文件名称               |
 | -n, --dry-run           | 试运行                           |
 | -f, --force             | 强制删除                         |
@@ -224,7 +225,7 @@ git config --global core.filemode false
 !*/
 ```
 
-gitignore 里，*、?、[] 可用作通配符。
+gitignore 里，\*、?、[] 可用作通配符。
 
 ### patch
 
@@ -422,8 +423,9 @@ git config --global core.editor gvim
 ```
 
 参考：
-* [How do I make Git use the editor of my choice for commits?](https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits)
-* [转：git windows中文 乱码问题解决汇总](http://www.cnblogs.com/youxin/p/3227961.html)
+
+- [How do I make Git use the editor of my choice for commits?](https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits)
+- [转：git windows 中文 乱码问题解决汇总](http://www.cnblogs.com/youxin/p/3227961.html)
 
 另外在升级 Vim 到 8.1 之后，由于 PATH 环境变量里加的还是 vim80 文件夹，导致 git commit 时提示：
 
@@ -500,7 +502,7 @@ git log --pretty='%aN' | sort -u | wc -l
 git log --oneline | wc -l
 ```
 
-参考：[Git代码行统计命令集](http://blog.csdn.net/Dwarven/article/details/46550117)
+参考：[Git 代码行统计命令集](http://blog.csdn.net/Dwarven/article/details/46550117)
 
 ### 修改文件名时的大小写问题
 
@@ -522,30 +524,30 @@ gitk 很方便，但是在 Mac 系统下默认显示很模糊，影响体验。
 
 1. 重新启动机器，按 command + R 等 Logo 和进度条出现，会进入 Recovery 模式，选择顶部的实用工具——终端，运行以下命令：
 
-    ```sh
-    csrutil disable
-    ```
+   ```sh
+   csrutil disable
+   ```
 
 2. 重新启动机器。
 
 3. 编辑 Wish 程序的 plist，启动高分辨率屏支持。
 
-    ```
-    sudo gvim /System/Library/Frameworks/Tk.framework/Versions/Current/Resources/Wish.app/Contents/Info.plist
-    ```
+   ```
+   sudo gvim /System/Library/Frameworks/Tk.framework/Versions/Current/Resources/Wish.app/Contents/Info.plist
+   ```
 
-    在最后的 </dict> 前面加上以下代码
+   在最后的 </dict> 前面加上以下代码
 
-    ```sh
-    <key>NSHighResolutionCapable</key>
-    <true/>
-    ```
+   ```sh
+   <key>NSHighResolutionCapable</key>
+   <true/>
+   ```
 
 4. 更新 Wish.app。
 
-    ```sh
-    sudo touch Wish.app
-    ```
+   ```sh
+   sudo touch Wish.app
+   ```
 
 5. 再次用 1 步骤的方法进入 Recovery 模式，执行 `csrutil enable` 启动对系统文件保护，再重启即可。
 
@@ -560,7 +562,7 @@ open /System/Library/Frameworks/Tk.framework/Versions/Current/Resources/
 
 打开 retinizer，将 Wish.app 拖到 retinizer 的界面。
 
-参考：[起底Git-Git基础](http://yanhaijing.com/git/2017/02/09/deep-git-4/)
+参考：[起底 Git-Git 基础](http://yanhaijing.com/git/2017/02/09/deep-git-4/)
 
 ### clone 时指定 master 以外的分支
 
@@ -590,3 +592,35 @@ fatal: no man viewer handled the request
 ```
 git config --global help.format web
 ```
+
+### github/gitlab 同时管理多个 ssh key 配置情形
+
+```
+cd ~/.ssh
+ssh-keygen -t rsa -C "email.com"
+touch config
+
+```
+
+生成 id_rsa_github,id_rsa_gitlab 文件
+
+修改配置文件
+
+```
+
+# gitlab
+Host gitlab.com
+    HostName gitlab.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+# github
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+
+```
+
+- 将 **ssh key**生成的 id_rsa_github.pub 内容复制到 http://github.com/settings/ssh
+
+[参考链接](http://xuyuan923.github.io/2014/11/04/github-gitlab-ssh/)
