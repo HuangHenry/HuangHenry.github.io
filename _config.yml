@@ -3,7 +3,7 @@
 # ---------------- #
 baseurl:
 #url: https://mazhuang.org
-url: https:Huanghenry.github.io
+url: https://Huanghenry.github.io
 date_format: "ordinal"
 # title: 码志
 title: personal_blog
@@ -93,8 +93,8 @@ comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
-disqus:
-    username: 
+# disqus:
+    # username: 
 # https://imsun.net/posts/gitment-introduction/
 
 # gitment:
