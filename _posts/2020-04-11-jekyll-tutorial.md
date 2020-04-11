@@ -1,16 +1,29 @@
 ---
 layout: post
-title: Jekyll 教程
-categories: [GitHub, web]
-description: 使用Jekyll搭建个人静态网站
-keywords: jekyll, GitHub,web
+title: 个人博客搭建简明教程
+categories: [GitHub, Blog]
+description: 使用jekyll搭建个人静态网站
+keywords: jekyll, GitHub, Web
 ---
 
-## 简介
+## github
+
+- 注册 github
+- 建立 name.github.io 仓库,使用 github pages 建立个人网站
+  - 免费
+  - 开源，网上很多优秀代码
+- 建网站工具
+  - jekyll
+  - Hexo
+  - wordpress
+
+## jekyll 教程
+
+### 简介
 
 Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给它的内容可以用你最喜欢的标记语言编写，可以是 Markdown，是 Textile 或者是纯粹的 HTML，然后 Jekyll 通过一个或一系列布局文件混合它们。在整个过程中，你可以调整网站 URL 的样式，布局中显示的数据等等。这一切都是通过编辑文本文件完成的，而静态网站就是它的最终产品
 
-## 目录结构
+### 目录结构
 
 基本的 Jekyll 站点通常看起来像这样：
 
@@ -40,7 +53,7 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 
 ```
 
-## gitalk 添加第三方评论插件
+### gitalk 添加第三方评论插件
 
 参考链接: <https://www.cnblogs.com/Tom-shushu/p/10970526.html>
 
@@ -56,7 +69,7 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 - 4.如上步骤完成之后，接下来你就会体验到 Gitralk 的方便之处：
   只需要将如下代码引入你想添加评论的 html 或者 jsp 页面中就可以使用了
 
-## Reference
+### jekyll 教程学习链接
 
 - [Jekyll 使用教程笔记 一：简介、快速开始、基本用法、目录结构](https://juejin.im/post/5b235a1cf265da597568a97d)
 - [Jekyll 使用教程笔记 三：Front Matter、写文章](https://juejin.im/post/5b3497ffe51d4558c5394a35)
