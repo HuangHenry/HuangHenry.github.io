@@ -18,7 +18,7 @@ mathjax: true
 ### 超链接
 
 ```
-[靠谱-ing](https://mazhuang.org)
+[靠谱-ing](https://HuangHenry.github.io)
 
 <https://mazhuang.org>
 ```
