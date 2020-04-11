@@ -42,12 +42,12 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 
 ## gitalk 添加第三方评论插件
 
-参考链接: https://www.cnblogs.com/Tom-shushu/p/10970526.html
+参考链接: <https://www.cnblogs.com/Tom-shushu/p/10970526.html>
 
 - 1.首先需要到 GitHub 上去新建一个仓库用于存放评论的内容
 - 2.在设置中打开 isue 功能
 - 3.需要注册一个 Github Application 具体步骤如下
-  (1)申请地址：https://github.com/settings/applications/new
+  (1)申请地址：<https://github.com/settings/applications/new>
   注意两个 URL 就是你网站的域名。名字随便写，描述随便写。
 
   (2)完成之后便到了如下页面：
@@ -66,4 +66,7 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 ## 优秀博客推荐
 
 [纯洁的微笑 blog](http://www.ityouknow.com/)
+
 [博客搭建](http://www.ityouknow.com/other/2018/09/16/create-blog.html)
+
+[码志](https://mazhuang.org/)
