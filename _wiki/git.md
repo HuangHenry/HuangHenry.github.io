@@ -621,6 +621,11 @@ Host github.com
 
 ```
 
+
 - 将 **ssh key**生成的 id_rsa_github.pub 内容复制到 http://github.com/settings/ssh
 
 [参考链接](http://xuyuan923.github.io/2014/11/04/github-gitlab-ssh/)
+
+[让你的git拥有不同身份](https://www.fengerzh.com/git-id/)
+
+* 根据域名选用用户 有一个脚本
