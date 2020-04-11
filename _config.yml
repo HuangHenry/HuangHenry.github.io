@@ -3,10 +3,10 @@
 # ---------------- #
 baseurl:
 #url: https://mazhuang.org
-url: https://Huanghenry.github.io
+url: https://huanghenry.github.io
 date_format: "ordinal"
 # title: 码志
-title: personal_blog
+title: personal_blog1
 subtitle: "闷骚的程序员"
 description: "个人博客，闷骚的程序员"
 keywords:  Huang Henry, 闷骚的程序员
