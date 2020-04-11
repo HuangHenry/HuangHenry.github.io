@@ -42,7 +42,7 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 
 ## gitalk 添加第三方评论插件
 
-参考链接: (https://www.cnblogs.com/Tom-shushu/p/10970526.html)
+参考链接: https://www.cnblogs.com/Tom-shushu/p/10970526.html
 
 - 1.首先需要到 GitHub 上去新建一个仓库用于存放评论的内容
 - 2.在设置中打开 isue 功能
