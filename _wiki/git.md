@@ -34,7 +34,7 @@ keywords: Git, 版本控制
 
 ## Q&A
 
-### 如何解决 gitk 中文乱码，git ls-files 中文文件名乱码问题？
+### 如何解决 gitk 中文乱码，git ls-files 中文文件名乱码问题
 
 在~/.gitconfig 中添加如下内容
 
@@ -621,11 +621,10 @@ Host github.com
 
 ```
 
-
 - 将 **ssh key**生成的 id_rsa_github.pub 内容复制到 http://github.com/settings/ssh
 
 [参考链接](http://xuyuan923.github.io/2014/11/04/github-gitlab-ssh/)
 
-[让你的git拥有不同身份](https://www.fengerzh.com/git-id/)
+[让你的 git 拥有不同身份](https://www.fengerzh.com/git-id/)
 
-* 根据域名选用用户 有一个脚本
+- 根据域名选用用户 有一个脚本
