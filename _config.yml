@@ -83,7 +83,8 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+# repository: mzlogin/mzlogin.github.io
+repository: HuangHenry/HuangHenry.github.io
 
 # ---------------- #
 #      Comments    #
