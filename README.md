@@ -1,6 +1,6 @@
 # HuangHenry
 
-我的个人博客：<https://HuangHenry.github.io>，欢迎 Star 和 Fork。
+我的个人博客：<https://HuangHenry.github.io>，欢迎观看。模板 Fork 自 [mzlogin](https://github.com/mzlogin/mzlogin.github.io)感谢！
 
 ## 概览
 
@@ -18,8 +18,6 @@
 ## 效果预览
 
 **[在线预览 &rarr;](https://HuangHenry.github.io)**
-
-![screenshot home](https://HuangHenry.github.io/assets/images/screenshots/home.png)
 
 ## Fork 指南
 
@@ -81,10 +79,6 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 ## 致谢
 
 本博客外观基于 [DONGChuan](https://dongchuan.github.io)和[mzlogin](https://github.com/mzlogin/mzlogin.github.io)修改，感谢！
-
-Thanks for JetBrains' support.
-
-<a href="https://www.jetbrains.com/?from=mzlogin.github.io"><img src="./assets/images/jetbrains.svg"/></a>
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
