@@ -40,6 +40,25 @@ Jekyll 的核心是一个文本转换引擎。这个系统的大概是：你给�
 
 ```
 
+## gitalk 添加第三方评论插件
+
+参考链接: (https://www.cnblogs.com/Tom-shushu/p/10970526.html)
+
+- 1.首先需要到 GitHub 上去新建一个仓库用于存放评论的内容
+- 2.在设置中打开 isue 功能
+
+* 3.需要注册一个 Github Application 具体步骤如下
+
+  (1)申请地址：https://github.com/settings/applications/new
+  注意两个 URL 就是你网站的域名。名字随便写，描述随便写。
+
+  (2)完成之后便到了如下页面：
+  其中 Client ID 和 Client Secret 是我们需要的东西
+
+- 4.如上步骤完成之后，接下来你就会体验到 Gitralk 的方便之处：
+
+只需要将如下代码引入你想添加评论的 html 或者 jsp 页面中就可以使用了
+
 ## Reference
 
 - [Jekyll 使用教程笔记 一：简介、快速开始、基本用法、目录结构](https://juejin.im/post/5b235a1cf265da597568a97d)
