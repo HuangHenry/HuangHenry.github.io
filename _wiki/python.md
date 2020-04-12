@@ -22,7 +22,7 @@ JSON 编码解码器。
 
 应用举例：
 
-* 格式化 JSON 文件
+- 格式化 JSON 文件
 
   ```sh
   python -m json.tool src.json > dst.json
@@ -40,7 +40,7 @@ JSON 编码解码器。
 
 应用举例：
 
-* 运行一个简易的 HTTP 服务器
+- 运行一个简易的 HTTP 服务器
 
   ```sh
   python -m CGIHTTPServer 80
@@ -52,7 +52,7 @@ JSON 编码解码器。
 
 应用举例：
 
-* 解码 base64
+- 解码 base64
 
   ```sh
   echo aGVsbG93b3JsZA== | python -m base64 -d
@@ -64,44 +64,30 @@ JSON 编码解码器。
   helloworld
   ```
 
-## 问题解决
+## [python pip 使用国内镜像][pip_home]
 
-### Your PYTHONPATH points to a site-packages dir
+- 临时使用 加上参数
 
-报错信息：
+  ```{python}
+  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-```
-~/github/hs-airdrop$ npm install
+  #example
+  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyspider
+  ```
 
-> bcrypto@5.0.3 install /Users/username/github/hs-airdrop/node_modules/bcrypto
-> node-gyp rebuild
+- 永久修改
 
-Your PYTHONPATH points to a site-packages dir for Python 3.x but you are running Python 2.x!
-     PYTHONPATH is currently: "/usr/local/lib/node_modules/npm/node_modules/node-gyp/gyp/pylib"
-     You should `unset PYTHONPATH` to fix this.
-gyp ERR! configure error
-gyp ERR! stack Error: `gyp` failed with exit code: 1
-gyp ERR! stack     at ChildProcess.onCpExit (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:351:16)
-gyp ERR! stack     at ChildProcess.emit (events.js:210:5)
-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:272:12)
-gyp ERR! System Darwin 19.3.0
-gyp ERR! command "/usr/local/Cellar/node/12.12.0/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
-gyp ERR! cwd /Users/username/github/hs-airdrop/node_modules/bcrypto
-gyp ERR! node -v v12.12.0
-gyp ERR! node-gyp -v v5.0.5
-gyp ERR! not ok
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! bcrypto@5.0.3 install: `node-gyp rebuild`
-npm ERR! Exit status 1
-npm ERR!
-npm ERR! Failed at the bcrypto@5.0.3 install script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+  - Linux 下，修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。文件夹要加“.”，表示是隐藏文件夹)
 
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /Users/username/.npm/_logs/2020-02-19T14_14_34_524Z-debug.log
-```
+    内容如下：
 
-解决方法：
+    ```{}
+    [global]
+    index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+    [install]
+    trusted-host=mirrors.aliyun.com
+    ```
 
-删除 /usr/local/lib/python3.7/site-packages/ 文件夹下的 sitecustomize.pyc，将 sitecustomize.py 文件重名为 sitecustomize.py~，安装成功之后再改回来。
+  - windows 下，直接在 user 目录中创建一个 pip 目录，如：C:\Users\xx\pip，新建文件 pip.ini。内容同上。
+
+[pip_home]: https://www.cnblogs.com/microman/p/6107879.html

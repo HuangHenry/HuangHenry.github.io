@@ -62,6 +62,26 @@ lsof -c Vim
 
 注意程序名区分大小写。
 
+## 使用 shell 命令行
+
+- [fzf][1] 模糊匹配
+- tmux
+
+## WSL 开通 ssh 端口
+
+```{bash}
+#重装openssh并启动
+apt-get remove openssh-server
+apt-get update
+apt-get install openssh-server
+vi /etc/ssh/sshd_config
+  修改 PasswordAuthentication no 为 PasswordAuthentication yes
+  :wq 保存退出
+service ssh --full-restart
+```
+
 ## Reference
 
 [玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
+
+[1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
