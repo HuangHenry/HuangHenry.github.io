@@ -18,9 +18,9 @@
 #   name: mzlogin
 #   url: http://weibo.com/mzlogin
 
-- sitename: 知乎
-  name: HuangHenry
-  url: http://www.zhihu.com/
+# - sitename: 知乎
+#   name: HuangHenry
+#   url: http://www.zhihu.com/
 # - sitename: 豆瓣
 #   name: 壮哥不胖
 #   url: http://www.douban.com/people/freedim

@@ -10,7 +10,7 @@ keywords: Markdown, 奇技淫巧
 
 这几年也发现越来越多的网站和程序提供了对 Markdown 的支持，从最初接触的 GitHub、Jekyll，到简书、掘金、CSDN 等等，由此也从别人做得好的文档中，学到了一些『奇技淫巧』，所以本文不是对 Markdown 基础语法的介绍，而是一些相对高级、能将 Markdown 玩出更多花样的小技巧。
 
-*注：如下技巧大多是利用 Markdown 兼容部分 HTML 标签的特性来完成，不一定在所有网站和软件里都完全支持，主要以 GitHub 支持为准。*
+_注：如下技巧大多是利用 Markdown 兼容部分 HTML 标签的特性来完成，不一定在所有网站和软件里都完全支持，主要以 GitHub 支持为准。_
 
 ## 在表格单元格里换行
 
@@ -27,7 +27,7 @@ keywords: Markdown, 奇技淫巧
 示例效果：
 
 | Header1 | Header2                          |
-|---------|----------------------------------|
+| ------- | -------------------------------- |
 | item 1  | 1. one<br />2. two<br />3. three |
 
 ## 图文混排
@@ -51,6 +51,7 @@ N 与图片高度有关。
 
 到这里应该不会受影响了，本行应该延伸到了图片的正下方，所以我要足够长才能确保不同的屏幕下都看到效果。
 ```
+
 示例效果：
 
 <img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
@@ -219,7 +220,28 @@ N 与图片高度有关。
 
 如果你觉得本文对你有帮助，欢迎关注我的微信公众号 isprogrammer，获取更多有帮助的内容。
 
+## 注释不显示
+
+```
+[comment]: <> (_XMind: ZEN - Trial Version_)
+[//]: <> (_XMind: ZEN - Trial Version_)
+[//]: # (_XMind: ZEN - Trial Version_)
+
+[^-^]: 注释内容
+[^_^]: # (看不见我, 你过来啊)
+
+[>-<]: sadly
+
+<!--哈哈我是注释，不会在浏览器中显示。-->
+
+<!--
+哈哈我是多段
+注释，
+不会在浏览器中显示。
+-->
+```
+
 ## 参考
 
-* <https://raw.githubusercontent.com/matiassingers/awesome-readme/master/readme.md>
-* <https://www.zybuluo.com/songpfei/note/247346>
+- <https://raw.githubusercontent.com/matiassingers/awesome-readme/master/readme.md>
+- <https://www.zybuluo.com/songpfei/note/247346>
