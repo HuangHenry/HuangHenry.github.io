@@ -150,7 +150,7 @@ print 'Hello, World!'
 
 This is a text with footnote[^1].
 
-### mermaid
+### mermaid(流程图)
 
 <div class="mermaid">
 sequenceDiagram
