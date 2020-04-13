@@ -10,6 +10,45 @@ keywords: Linux
 
 ## 实用命令
 
+### grep
+
+- grep or 操作符
+
+  - 使用 \|
+
+    ```{bash}
+      grep 'pattern1\|pattern2' filename
+    ```
+
+  - 使用选项 -E
+
+    ```{bash}
+    grep -E 'pattern1|pattern2' filename
+    ```
+
+- grep and 操作
+
+  - 使用 -E 'pattern1.\*pattern2'
+
+    ```{bash}
+      grep -E 'pattern1.*pattern2' filename
+      grep -E 'pattern1.*pattern2|pattern2.\*pattern1' filename
+    ```
+
+  - 使用多个 grep 命令
+
+    ```{bash}
+      grep -E 'pattern1' filename | grep -E 'pattern2'
+    ```
+
+- grep not 操作
+
+  - 使用选项 grep -v
+
+  ```{bash}
+    grep -v 'pattern1' filename
+  ```
+
 ### fuser
 
 查看文件被谁占用。
@@ -85,3 +124,7 @@ service ssh --full-restart
 [玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 
 [1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
+
+```
+
+```

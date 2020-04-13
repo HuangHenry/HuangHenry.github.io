@@ -575,6 +575,10 @@ git clone -b <branch name> --single-branch <repo address>
 ```sh
 git symbolic-ref --short -q HEAD
 ```
+## 解决linux与windows换行符不一样冲突
+   git config --global core.autocrlf false
+   可以通过调用 git config --global --list 查看当前设置
+   git 提示warning LF will be replace by CRLF,可以参考这篇 <https://www.jianshu.com/p/450cd21b36a4>
 
 ### 解决 no man viewer handled the request
 
