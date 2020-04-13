@@ -575,10 +575,12 @@ git clone -b <branch name> --single-branch <repo address>
 ```sh
 git symbolic-ref --short -q HEAD
 ```
-## 解决linux与windows换行符不一样冲突
-   git config --global core.autocrlf false
-   可以通过调用 git config --global --list 查看当前设置
-   git 提示warning LF will be replace by CRLF,可以参考这篇 <https://www.jianshu.com/p/450cd21b36a4>
+
+## 解决 linux 与 windows 换行符不一样冲突
+
+git config --global core.autocrlf false
+可以通过调用 git config --global --list 查看当前设置
+git 提示 warning LF will be replace by CRLF,可以参考这篇 <https://www.jianshu.com/p/450cd21b36a4>
 
 ### 解决 no man viewer handled the request
 
@@ -632,3 +634,7 @@ Host github.com
 [让你的 git 拥有不同身份](https://www.fengerzh.com/git-id/)
 
 - 根据域名选用用户 有一个脚本
+
+## 参考
+
+[Git 的奇技淫巧](https://github.com/521xueweihan/git-tips/blob/master/README.md)
