@@ -4,6 +4,7 @@ title: Linux/Unix/WSL
 categories: Linux
 description: 类 Unix 系统下的一些常用命令和用法。
 keywords: Linux,WSL
+mathjax: true
 ---
 
 类 Unix 系统下的一些常用命令和用法。
@@ -128,7 +129,11 @@ lsof -c Vim
      /var/log/landscape/sysinfo.log for more information.
 ```
 
-<font color='red'>\var\log\landscape\sysinfo.log</font>里的异常日志：
+<font color='red'>\var\log\landscape\sysinfo.log</font>里的异常日志:
+
+<span style="color:red;">\var\log\landscape\sysinfo.log</span>里的异常日志:
+
+$\color{red}{\var\log\landscape\sysinfo.log}$里的异常日志:
 
 
 ```{}
