@@ -1,9 +1,9 @@
 ---
 layout: wiki
-title: Linux/Unix
+title: Linux/Unix/WSL
 categories: Linux
 description: 类 Unix 系统下的一些常用命令和用法。
-keywords: Linux
+keywords: Linux,WSL
 ---
 
 类 Unix 系统下的一些常用命令和用法。
@@ -108,26 +108,35 @@ lsof -c Vim
 - [z.lua](https://www.jianshu.com/p/a56766f2b80e)
 - tldr
 
-
 ## WSL 开通 ssh 端口
 
 ```{bash}
-#重装openssh并启动
-apt-get remove openssh-server
-apt-get update
-apt-get install openssh-server
-vi /etc/ssh/sshd_config
-  修改 PasswordAuthentication no 为 PasswordAuthentication yes
-  :wq 保存退出
-service ssh --full-restart
+  #重装openssh并启动
+  apt-get remove openssh-server
+  apt-get update
+  apt-get install openssh-server
+  vi /etc/ssh/sshd_config
+    修改 PasswordAuthentication no 为 PasswordAuthentication yes
+    :wq 保存退出
+  service ssh --full-restart
 ```
-### ssh 连上时提示异常
-```
+
+## ssh 连上时提示异常
+
+```{}
 => There were exceptions while processing one or more plugins. See
-     /var/log/landscape/sysinfo.log for more information.		
+     /var/log/landscape/sysinfo.log for more information.
 ```
-$\color{red}{\var\log\landscape\sysinfo.log}$里的异常日志：
-```
+
+<font color='red'> \var\log\landscape\sysinfo.log </font> 里的异常日志：
+
+$\color{red}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
+
+$\color{#FF0000}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
+
+$\color{rgb(255,0,0)}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
+
+```{}
 ERROR    Network plugin raised an exception.
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/landscape/sysinfo/sysinfo.py", line 99, in run
@@ -142,20 +151,19 @@ Traceback (most recent call last):
     fcntl.ioctl(sock, SIOCETHTOOL, packed)  # Status ioctl() call
 OSError: [Errno 22] Invalid argument
 ```
+
 解决方法，修改（创建）配置文件（/etc/landscape/client.conf），禁用 landscape-sysinfo 的 Network plugin：
-```
+
+```{}
 [sysinfo]
 exclude_sysinfo_plugins = Temperature, Network
 ```
+
 <http://manpages.ubuntu.com/manpages/cosmic/man1/landscape-sysinfo.1.html>
 
 ## Reference
 
-[wsl安装和使用笔记](https://low.bi/p/Pd19w2jwRO0)
+[wsl 安装和使用笔记](https://low.bi/p/Pd19w2jwRO0)
 [玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 
 [1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
-
-```
-
-```
