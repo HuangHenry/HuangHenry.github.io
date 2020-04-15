@@ -128,13 +128,8 @@ lsof -c Vim
      /var/log/landscape/sysinfo.log for more information.
 ```
 
-<font color='red'> \var\log\landscape\sysinfo.log </font> 里的异常日志：
+<font color='red'>\var\log\landscape\sysinfo.log</font>里的异常日志：
 
-$\color{red}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
-
-$\color{#FF0000}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
-
-$\color{rgb(255,0,0)}{/var/log/landscape/sysinfo.log}$ 里的异常日志：
 
 ```{}
 ERROR    Network plugin raised an exception.
