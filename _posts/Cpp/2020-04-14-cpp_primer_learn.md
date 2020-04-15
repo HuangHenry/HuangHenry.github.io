@@ -95,6 +95,3 @@ class Foo{
 
 #### Chapter Summary
 
-```
-
-```
