@@ -11,6 +11,36 @@ mathjax: true
 
 ## 实用命令
 
+### 软件安装更新
+
+- update 更新资源
+
+  - 只检查 不更新（已安装的可用更新 给出汇总报告）
+
+  ```{}
+    sudo apt-get update
+  ```
+
+- 对系统软件都进行更新升级
+
+  - 更新已安装的软件包
+
+  ```{}
+    sudo apt-get upgrade
+  ```
+
+- 安装软件包
+
+  ```{}
+    sudo apt-get install
+  ```
+
+- 删除软件包
+
+  ```{}
+    sudo apt-get remove package
+  ```
+
 ### grep
 
 - grep or 操作符
@@ -162,7 +192,8 @@ exclude_sysinfo_plugins = Temperature, Network
 
 ## Reference
 
-[wsl 安装和使用笔记](https://low.bi/p/Pd19w2jwRO0)
-[玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
+- [wsl 安装和使用笔记](https://low.bi/p/Pd19w2jwRO0)
+
+- [玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 
 [1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/

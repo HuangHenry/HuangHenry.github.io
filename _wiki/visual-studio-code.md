@@ -17,7 +17,7 @@ M --> Alt
 Cmd --> Command
 
 | 功能              | Windows | Mac OS X |
-|:------------------|:--------|:---------|
+| :---------------- | :------ | :------- |
 | 打开文件          | C-o     |          |
 | 打开文件夹        | C-k C-o |          |
 | 关闭文件夹        | C-k f   |          |
@@ -29,3 +29,26 @@ Cmd --> Command
 | 插件              | C-S-x   |          |
 | Markdown 侧边预览 | C-k v   |          |
 | Markdown 预览     | C-S-v   |          |
+
+## 插件推荐
+
+- Bracket Pair
+- One Dark Pro
+- Remote-WSL
+- Vim
+- vscode icons
+- Excel Viewer
+- Git History
+- Git Project Manager
+- GitLens
+- Markdown All in One
+- Markdown+Math
+- markdownlint
+- Partial Diff
+- Path Intellisense
+- Prettier
+- Python
+- Rainbow CSV
+- Todo Tree
+- vscode-pdf
+- C/C++
