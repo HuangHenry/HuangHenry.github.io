@@ -2,10 +2,6 @@
   url: http://mazhuang.org
   src: life
 
-- name: jiangang
-  url: http://homepage.fudan.edu.cn/jgying/
-  src: life
-
 - name: Connie 酱
   url: https://connie99.github.io
   src: life
@@ -31,6 +27,15 @@
 - name: 村农
   url: http://www.why-dong.com/
   src: life
+
+- name: jiangang
+  url: http://homepage.fudan.edu.cn/jgying/
+  src: www
+
+- name: roycheng
+  url: http://roycheng.cn/
+  src: www
+
 
 
 - name: 水寒的博客
