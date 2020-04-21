@@ -1,6 +1,6 @@
 ---
 layout: post
-title: matlab crash problem
+title: MATLAB crash problem
 categories: [crash, MATLAB]
 description: MATLAB 经常开机死机，或者运行画图时死机
 keywords: crash, MATLAB
@@ -28,3 +28,6 @@ MATLAB has a command line environment in addition to the normal MATLAB Desktop e
     matlab -softwareopengl
 To set your preferences so that MATLAB always starts with software OpenGL on this computer, execute this command at the MATLAB command line:
     opengl('save','software')
+
+## Reference
+[matlab crash](https://www.mathworks.com/matlabcentral/answers/97167-why-will-matlab-not-start-up-properly-on-my-windows-based-system)
