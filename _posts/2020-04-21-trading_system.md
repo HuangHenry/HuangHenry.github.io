@@ -288,7 +288,7 @@ IT 部门准备数据 -> 研究员生成策略信号 -> 基金经理选信号配
 | -------------------- | ------------------------------------------- | ------------ | ---------------------------------------------------- |
 | 数据引擎 DataHandler |                                             | MarketEvent  | 接收行情，行情过滤                                   |
 | 策略 Strategy        | MarketEvent                                 | SignalEvent  | 策略计算                                             |
-| 组合 POrtfolio       | SignalEvent,<br> MarketEvent,<br> FillEvent | OrderEvent   | 聚合策略信号，生成组合目标仓位；根据行情波动调整仓位 |
+| 组合 Portfolio       | SignalEvent,<br> MarketEvent,<br> FillEvent | OrderEvent   | 聚合策略信号，生成组合目标仓位；根据行情波动调整仓位 |
 | 交易执行器 Executor  | MarketEvent<br>OrderEvent<br> FillEvent     | FillEvent    | 算法交易                                             |
 
 一个最简单的交易系统至少需要有如下几种对象/类:
