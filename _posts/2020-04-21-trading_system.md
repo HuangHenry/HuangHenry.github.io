@@ -283,12 +283,13 @@ IT 部门准备数据 -> 研究员生成策略信号 -> 基金经理选信号配
 这里我直接给出一个设计方案，当然这个方案不一定是最好的，也不是唯一的答案（事实上，根据策略类型的不同，交易系统的架构也大不相同，比如说期货 CTA 策略跟股票 alpha 策略的设计肯定是不同的）。
 
 交易系统的对象们
-| 对象 | 订阅哪些事件 | 生成哪些事件 | 功能 |
-|-----|-------|------|-------|
-| 数据引擎 DataHandler | | MarketEvent | 接收行情，行情过滤 |
-|策略 Strategy|MarketEvent|SignalEvent|策略计算|
-|组合 POrtfolio|SignalEvent,<br> MarketEvent,<br> FillEvent| OrderEvent|聚合策略信号，生成组合目标仓位；根据行情波动调整仓位|
-|交易执行器 Executor|MarketEvent<br>OrderEvent<br> FillEvent|FillEvent|算法交易|
+
+| 对象                 | 订阅哪些事件                                | 生成哪些事件 | 功能                                                 |
+| -------------------- | ------------------------------------------- | ------------ | ---------------------------------------------------- |
+| 数据引擎 DataHandler |                                             | MarketEvent  | 接收行情，行情过滤                                   |
+| 策略 Strategy        | MarketEvent                                 | SignalEvent  | 策略计算                                             |
+| 组合 POrtfolio       | SignalEvent,<br> MarketEvent,<br> FillEvent | OrderEvent   | 聚合策略信号，生成组合目标仓位；根据行情波动调整仓位 |
+| 交易执行器 Executor  | MarketEvent<br>OrderEvent<br> FillEvent     | FillEvent    | 算法交易                                             |
 
 一个最简单的交易系统至少需要有如下几种对象/类:
 
