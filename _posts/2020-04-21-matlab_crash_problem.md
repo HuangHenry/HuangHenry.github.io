@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MATLAB crash problem
-categories: [crash, MATLAB]
+categories: [MATLAB]
 description: MATLAB 经常开机死机，或者运行画图时死机
 keywords: crash, MATLAB
 ---
