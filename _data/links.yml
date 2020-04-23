@@ -2,9 +2,6 @@
   url: http://mazhuang.org
   src: life
 
-- name: Connie 酱
-  url: https://connie99.github.io
-  src: life
 
 - name: 只宁静不致远
   url: http://zxning.github.io
@@ -56,6 +53,10 @@
   url: https://www.quantstart.com/
   src: www
 
-- name: QuantStrat TradeR  
+- name: QuantStrat TradeR
   url: https://quantstrattrader.wordpress.com/
+  src: www
+
+- name: turningfinanace
+  url: http://www.turingfinance.com/
   src: www
