@@ -189,16 +189,16 @@ while True:
     except queue.Empty:
         print('='\*10)
     else: # 根据事件类型，执行对应的处理函数。实践中事件和处理函数的关系由一个{eventType:[handlers]}字典来维护
-    if event.type* == 'A':
+    if event.type_ == 'A':
         onA1()
         onA2()
         onA3()
-    elif event.type* == 'B':
+    elif event.type_ == 'B':
         onB1()
         onB2()
-    elif event.type* == 'C':
+    elif event.type_ == 'C':
         onC()
-    elif event.type\_ == 'D':
+    elif event.type_ == 'D':
         onD()
 ```
 
