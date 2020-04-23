@@ -9,19 +9,21 @@ permalink: /links/
 ---
 
 > God made relatives
-
-{% for link in site.data.links %}
-{% if link.src == 'life' %}
-
-- [{{ link.name }}]({{ link.url }})
-  {% endif %}
+<url>
+  {% for link in site.data.links %}
+    {% if link.src == 'life' %}
+      <li><a href="{{ link.url}}" target="_blank">{{ link.name}}</a></li>
+    {% endif %}
   {% endfor %}
+</url>
 
 > 友情链接
 
+<url>
 {% for link in site.data.links %}
 {% if link.src == 'www' %}
-
-- [{{ link.name }}]({{ link.url }})
+      <li><a href="{{ link.url}}" target="_blank">{{ link.name}}</a></li>
   {% endif %}
   {% endfor %}
+
+</url>
