@@ -714,4 +714,5 @@ PS2. 最近喜欢上了宏观，也可能会先写几篇宏观的读书笔记。
 * [Event-Driven Backtesting with Python - Part V](https://www.quantstart.com/articles/Event-Driven-Backtesting-with-Python-Part-V)
 * [Event-Driven Backtesting with Python - Part VI](https://www.quantstart.com/articles/Event-Driven-Backtesting-with-Python-Part-VI)
 * [Event-Driven Backtesting with Python - Part VII](https://www.quantstart.com/articles/Event-Driven-Backtesting-with-Python-Part-VII)
-* [Event-Driven Backtesting with Python - Part VIII](https://www.quantstart.com/articles/)
+* [Event-Driven Backtesting with Python - Part VIII](https://www.quantstart.com/articles/Event-Driven-Backtesting-with-Python-Part-VIII)
+* [Quantstart Articles](https://www.quantstart.com/articles/)

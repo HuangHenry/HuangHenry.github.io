@@ -18,8 +18,6 @@
   url: http://www.fengerzh.com/
   src: life
 
-
-
 - name: ZZY补完计划
   url: https://zzycreate.github.io/
   src: life
@@ -32,29 +30,21 @@
   url: http://homepage.fudan.edu.cn/jgying/
   src: www
 
+- name: epchan
+  url: http://epchan.blogspot.com/
+  src: www
+- name: PRICE ACTION LAB BLOG
+  url: https://www.priceactionlab.com/Blog/
+  src: www
+- name: QuantsPortal
+  url: http://www.quantsportal.com/
+  src: www
 - name: roycheng
   url: http://roycheng.cn/
   src: www
-
-
-
-- name: 水寒的博客
-  url: https://dp2px.com
+- name: Flirting with Models
+  url: https://blog.thinknewfound.com/
   src: www
-
-- name: 孙不服的博客
-  url: https://www.sunbufu.club/
-  src: www
-
-
-- name: HwiLu's 博客
-  url: https://hwilu.github.io/
-  src: www
-
-- name: 有次博客
-  url: http://you.ci/
-  src: www
-
-- name: 呓城之城
-  url: http://yicheng.zdyrs.com/
+- name: alphaArchitect
+  url: https://alphaarchitect.com/
   src: www
