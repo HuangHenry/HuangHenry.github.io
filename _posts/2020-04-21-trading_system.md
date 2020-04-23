@@ -126,9 +126,9 @@ event_queue = queue.Queue()
 ### 事件类
 
 class Event():
- def **init**(self, type*):
-self.type* = type* # 事件类型，这里用直接字符串表示，实践中应该定义事件类型常量。
-self.dict* = {} # 事件内容，通常是一个字典
+ def __init__self, type_):
+self.type_ = type_ # 事件类型，这里用直接字符串表示，实践中应该定义事件类型常量。
+self.dict_ = {} # 事件内容，通常是一个字典
 
 ### 事件源
 
