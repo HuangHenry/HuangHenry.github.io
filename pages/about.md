@@ -16,10 +16,12 @@ permalink: /about/
 
 ## 联系
 
+<url>
 {% for website in site.data.social %}
-
-- {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
+<li>{{website.sitename}}:<a href="{{website.url}}" target="_blank">@{{website.name}}</a></li>
+<!-- - {{ website.sitename }}：[@{{ website.name }}]({{ website.url }}) -->
   {% endfor %}
+</url>
 
 ## Skill Keywords
 
