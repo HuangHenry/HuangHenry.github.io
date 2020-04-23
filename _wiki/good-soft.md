@@ -36,3 +36,19 @@ keywords: 软件, 推荐
   然后就能愉快地使用 blog 命令在任意目录进入 blog 仓库的目录了。
 
 [wifi mouse]: https://wifimouse.necta.us/
+
+### windows 激活工具
+
+- [kmspico](https://www.officialkmspico.com/)
+
+- password: officialkmspico.com
+  [how to install kms](https://www.officialkmspico.com/how-to-install-kmspico/)
+
+- Note: KMS activation is perfectly safe and legal (for testing purposes), and will ensure that your software remains activated for a period of 180 days.
+  After this time, a KMSpico service that runs in the background on your PC will automatically re-activate your Microsoft products for a further 180 days, essentially ensuring that your installation of Windows and Office will never expire.
+
+```cmd
+ slmgr.vbs -xpr  #查看windows到期时间
+ slmr.vbs -dlv # 查看windows到期时间详细信息
+
+```
