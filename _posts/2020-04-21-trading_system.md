@@ -334,8 +334,8 @@ IT 部门准备数据 -> 研究员生成策略信号 -> 基金经理选信号配
 ```python
 
 class CSVDataHandler(DataHandler):
-def run(self): # 用一个单独线程进行行情回放
-pass
+    def run(self): # 用一个单独线程进行行情回放
+        pass
 
     def get_prev_bars(self):
         # 功能函数：获取之前的历史k线数据
@@ -346,8 +346,8 @@ pass
         pass
 
 class RandomStrategy(Strategy):
-def on_market_event(self, event): # 这里写策略逻辑
-pass
+    def on_market_event(self, event): # 这里写策略逻辑
+        pass
 
 class NaivePortfolio(Portfolio):
 
@@ -364,7 +364,8 @@ class NaivePortfolio(Portfolio):
         pass
 
 class BarBacktestExecutor(Executor):
-def on_order_event(self, event): # 算法交易：信号价+滑点 or 对一价 or 最佳报价排队 # 如果量大，要拆单：twap, vwap
+    def on_order_event(self, event): # 算法交易：信号价+滑点 or 对一价 or 最佳报价排队 # 如果量大，要拆单：twap, vwap
+        pass
 
 ################## main.py ##################
 
@@ -381,24 +382,24 @@ executor = BarBacktestExecutor(event_queue, data_handler) # 回测模拟成交�
 data_handler.run()
 
 while True:
-try:
-event = event_queue.get(block=True, timeout=3)
-except queue.Empty:
-break
-else: # 根据事件的不同类型，调用各自的 handlers 处理事件
-if event.type == 'MARKET':
-strategy.on_market_event(event) # MarketEvent, 喂给策略，生成信号
-portfolio.on_market_event(event) # MarketEvent, 喂给 portfolio, 调整 position_sizing && 调整限价单价格
-executor.on_market_event(event) # 如果需要通过 order_book 精确的估计能否成交 ...
+    try:
+        event = event_queue.get(block=True, timeout=3)
+    except queue.Empty:
+        break
+    else: # 根据事件的不同类型，调用各自的 handlers 处理事件
+    if event.type == 'MARKET':
+        strategy.on_market_event(event) # MarketEvent, 喂给策略，生成信号
+        portfolio.on_market_event(event) # MarketEvent, 喂给 portfolio, 调整 position_sizing && 调整限价单价格
+        executor.on_market_event(event) # 如果需要通过 order_book 精确的估计能否成交 ...
 
-        elif event.type == 'SIGNAL':
-            portfolio.on_signal_event(event)    # 信号 -> 组合
+    elif event.type == 'SIGNAL':
+        portfolio.on_signal_event(event)    # 信号 -> 组合
 
-        elif event.type == 'ORDER':
-            executor.on_order_event(event)    # 执行订单
+    elif event.type == 'ORDER':
+        executor.on_order_event(event)    # 执行订单
 
-        elif event.type == 'FILL':
-                portfolio.on_fill_event(event)    # 根据成交回报更新持仓信息
+    elif event.type == 'FILL':
+        portfolio.on_fill_event(event)    # 根据成交回报更新持仓信息
 ```
 
 References:
