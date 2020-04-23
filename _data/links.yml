@@ -48,3 +48,14 @@
 - name: alphaArchitect
   url: https://alphaarchitect.com/
   src: www
+- name: quant at risk
+  url: http://www.quantatrisk.com/
+  src: www
+
+- name: quantstart
+  url: https://www.quantstart.com/
+  src: www
+
+- name: QuantStrat TradeR  
+  url: https://quantstrattrader.wordpress.com/
+  src: www
