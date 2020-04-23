@@ -114,7 +114,7 @@ what is event-driven programming
 
 我写了一段简单的 python 代码来解释这个逻辑（代码可运行）：
 
-```
+```python
 import queue
 import time
 import threading
@@ -331,7 +331,7 @@ IT 部门准备数据 -> 研究员生成策略信号 -> 基金经理选信号配
 
 #################### objects && event definition ################
 
-```{python}
+```python
 
 class CSVDataHandler(DataHandler):
 def run(self): # 用一个单独线程进行行情回放
@@ -481,14 +481,14 @@ HMAC 签名算法
 
 2. 签名生成函数直接调用 python hmax 库:
 
-```
+```python
 import hmac
 signature = hmac.new(apiSecret, msg, digestmod=hashlib.sha256).hexdigest()
 ```
 
 3. 请求过期时间要在程序中动态的生成，例如
 
-```
+```python
 expires = int(round(time.time()) + 50)
 ```
 
@@ -498,7 +498,7 @@ expires = int(round(time.time()) + 50)
 
 如下是生成签名的代码，从官方示例中抄过来的，修改了部分 bug。注意这个用 python2 运行：
 
-```{python}
+```python
 # -*- coding: utf-8 -*-
 
 import time
@@ -559,7 +559,7 @@ Computing HMAC: GET/api/v1/order1545209108symbol=XBTUSD&side=Buy&orderQty=20&ord
 
 1. 一个 websocket 连接的构造方式为：
 
-```
+```python
 import websocket
 ws = websocket.WebSocketApp(url, on_message, on_close, on_open, on_error)
 ```
@@ -572,7 +572,7 @@ strategy.on_depth(OrderbookDepthData) # 策略计算
 
 2. 通过 ws.run_forever()，启动一个 websocket 连接并让它持续运行。注意这个 ws 实例需要单开一个线程运行，否则程序会卡在 run_forever()这里。示例如下：（对多线程不熟悉的同学，自行 google 理解下面代码的含义）
 
-```
+```python
 import threading
 td = threading.Thread(target=ws.run_forever)
 td.start()
@@ -602,7 +602,7 @@ ws.send(json)
 
 这里直接给出一个最简单的的 bitmexWebsocketAPI 封装：（可直接运行，此代码参考的是 bitmex 交易所官方示例项目）
 
-```
+```python
 import websocket
 import threading
 import json
