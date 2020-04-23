@@ -126,9 +126,9 @@ event_queue = queue.Queue()
 ### 事件类
 
 class Event():
- def __init__self, type_):
-self.type_ = type_ # 事件类型，这里用直接字符串表示，实践中应该定义事件类型常量。
-self.dict_ = {} # 事件内容，通常是一个字典
+    def __init__self, type_):
+        self.type_ = type_ # 事件类型，这里用直接字符串表示，实践中应该定义事件类型常量。
+        self.dict_ = {} # 事件内容，通常是一个字典
 
 ### 事件源
 
@@ -150,31 +150,31 @@ class EventSource():
 ### 事件处理函数
 
 def onA1():
-print('calling onA1()')
+    print('calling onA1()')
 
 def onA2():
-print('calling onA2()')
+    print('calling onA2()')
 
 def onA3():
-global event_queue
-event_queue.put(Event('B'))
-print('calling onA3()')
+    global event_queue
+    event_queue.put(Event('B'))
+    print('calling onA3()')
 
 def onB1():
-print('calling onB1()')
+    print('calling onB1()')
 
 def onB2():
-global event_queue
-event_queue.put(Event('C'))
-print('calling onB2()')
+    global event_queue
+    event_queue.put(Event('C'))
+    print('calling onB2()')
 
 def onC():
-global event_queue
-event_queue.put(Event('D'))
-print('calling onC()')
+    global event_queue
+    event_queue.put(Event('D'))
+    print('calling onC()')
 
 def onD():
-print('calling onD()')
+    print('calling onD()')
 
 ### 启动事件源
 
@@ -184,22 +184,22 @@ event_source.run() # 在另一线程中每隔 3 秒 push 一个 A 事件
 ### 主线程：事件分发和处理逻辑
 
 while True:
-try:
-event = event*queue.get(block=True, timeout=1) # 不断尝试从队列中取出事件
-except queue.Empty:
-print('='\*10)
-else: # 根据事件类型，执行对应的处理函数。实践中事件和处理函数的关系由一个{eventType:[handlers]}字典来维护
-if event.type* == 'A':
-onA1()
-onA2()
-onA3()
-elif event.type* == 'B':
-onB1()
-onB2()
-elif event.type* == 'C':
-onC()
-elif event.type\_ == 'D':
-onD()
+    try:
+        event = event*queue.get(block=True, timeout=1) # 不断尝试从队列中取出事件
+    except queue.Empty:
+        print('='\*10)
+    else: # 根据事件类型，执行对应的处理函数。实践中事件和处理函数的关系由一个{eventType:[handlers]}字典来维护
+    if event.type* == 'A':
+        onA1()
+        onA2()
+        onA3()
+    elif event.type* == 'B':
+        onB1()
+        onB2()
+    elif event.type* == 'C':
+        onC()
+    elif event.type\_ == 'D':
+        onD()
 ```
 
 我们可以这样说，一个事件驱动程序可以定义为一系列 “当发生事件 X 时，执行 onX1(), onX2()”的规则，我们写一个事件驱动的程序，需要做的就是 1. 定义事件处理映射关系 2. 实现各种 onXXX()处理函数
