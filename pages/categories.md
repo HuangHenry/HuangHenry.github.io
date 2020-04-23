@@ -12,7 +12,7 @@ permalink: /categories/
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
 <h3 id="{{ category[0] }}">{{ category | first }}</h3>
-<ol class="posts-list" id="{{ category[0] }}">	<ol class="posts-list">
+<ol class="posts-list">
 {% for post in category.last %}
 <li class="posts-list-item">
 <span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
