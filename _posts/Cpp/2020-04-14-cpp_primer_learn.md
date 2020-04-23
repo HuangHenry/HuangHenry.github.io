@@ -20,7 +20,7 @@ keywords: C++
 
 ##### 13.1.1 拷贝构造函数
 
-```{c++}
+```cpp
 class Foo{
     public:
     Foo(); //default constructor
@@ -31,7 +31,7 @@ class Foo{
 
 - 例子
 
-```{c++}
+```cpp
     string dots(10,'.'); //直接初始化
     string s(dots); //直接初始化
     string s2=dots; //拷贝初始化 有=符号
@@ -44,7 +44,7 @@ class Foo{
 
 ##### 13.1.2 拷贝赋值运算符
 
-```{c++}
+```c++
   Foo & operator=(const Foo&);//赋值运算符
 
   Sales_data & Sales_data::operator=(const Sales_data &rhs){
@@ -60,7 +60,7 @@ class Foo{
 
 析构函数和构造函数相反操作：析构函数释放对象资源，销毁对象非 static 数据成员
 
-```{c++}
+```c++
 class Foo{
     public:
        ~Foo();//析构函数  无返回值
