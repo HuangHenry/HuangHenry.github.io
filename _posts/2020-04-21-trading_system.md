@@ -377,7 +377,7 @@ strategy = RandomStrategy(event_queue, data_handler) # 策略实例。实际应�
 portfolio = NaivePortfolio(event_queue, data_handler) # 组合
 executor = BarBacktestExecutor(event_queue, data_handler) # 回测模拟成交器；如果是实盘这里就是算法交易模块
 
-启动行情回放
+# 启动行情回放
 
 data_handler.run()
 
