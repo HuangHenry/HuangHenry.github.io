@@ -20,3 +20,7 @@ keywords: Windows
 最后点击“确定”关闭设置窗口。以后你再离开电脑时，电脑闲置超过指定的时间后就会自动锁屏了。
 
 只有输入登录密码才能查看和使用电脑。如图：
+
+## 远程桌面 crash
+
+[使用远程桌面协议后Windows 10 DWM.EXE 100%的解决办法](https://www.landiannews.com/archives/60962.html)
