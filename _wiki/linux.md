@@ -9,6 +9,12 @@ mathjax: true
 
 类 Unix 系统下的一些常用命令和用法。
 
+## linux 
+- zsh
+  - https://zhuanlan.zhihu.com/p/19556676
+-oh my zsh  
+  - https://www.jianshu.com/p/d194d29e488c
+- 
 ## 实用命令
 
 ### 软件安装更新
@@ -135,6 +141,7 @@ lsof -c Vim
 ## 使用 shell 命令行
 
 - [fzf][1] 模糊匹配
+  https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
 - tmux
 - [z.lua](https://www.jianshu.com/p/a56766f2b80e)
 - tldr
@@ -197,3 +204,6 @@ exclude_sysinfo_plugins = Temperature, Network
 - [玩转 Linux 系统](https://github.com/HuangHenry/Python-100-Days/blob/master/Day31-35/31-35.%E7%8E%A9%E8%BD%ACLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 
 [1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
+
+## ubuntu 新装配置
+https://zhuanlan.zhihu.com/p/56253982

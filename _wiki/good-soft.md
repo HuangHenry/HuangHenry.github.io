@@ -20,6 +20,15 @@ keywords: 软件, 推荐
 | 笔记                                 | OneNote                  | OneNote                 |
 | 终端                                 | Windows Terminal / Cmder | zsh                     |
 | 阅读 EPUB 电子书                     | Neat Reader              | iBook                   |
+| pdf reader                           | Sumatrapdf               | windows                 |
+
+## color
+
+- grey:
+  - BackgroundColor = #b3b1b4
+- white
+  - BackgroundColor= #fffffff
+
 
 ## 亮点
 

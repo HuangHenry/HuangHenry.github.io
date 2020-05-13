@@ -24,3 +24,10 @@ keywords: Windows
 ## 远程桌面 crash
 
 [使用远程桌面协议后Windows 10 DWM.EXE 100%的解决办法](https://www.landiannews.com/archives/60962.html)
+
+## 新装电脑配置
+* listary
+* anaconda3
+* pycharm
+* teamviewer
+* 
