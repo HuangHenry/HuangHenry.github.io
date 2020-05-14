@@ -6,7 +6,7 @@ description: 主观投资，行业分析
 keywords: 行业分析,
 ---
 
-[行业研究员分析一个公司的流程是什么](https://www.zhihu.com/question/21305398》)
+[行业研究员分析一个公司的流程是什么](https://www.zhihu.com/question/21305398)
 
 ## 张子哲观点
 
