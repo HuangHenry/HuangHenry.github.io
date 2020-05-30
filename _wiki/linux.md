@@ -9,12 +9,14 @@ mathjax: true
 
 类 Unix 系统下的一些常用命令和用法。
 
-## linux 
+## linux
+
 - zsh
   - https://zhuanlan.zhihu.com/p/19556676
--oh my zsh  
+    -oh my zsh
   - https://www.jianshu.com/p/d194d29e488c
-- 
+-
+
 ## 实用命令
 
 ### 软件安装更新
@@ -206,4 +208,44 @@ exclude_sysinfo_plugins = Temperature, Network
 [1]: https://www.tecmint.com/fzf-fuzzy-file-search-from-linux-terminal/
 
 ## ubuntu 新装配置
+
 https://zhuanlan.zhihu.com/p/56253982
+
+## ubuntu python3 配置
+
+/bin/sh: python: not found
+
+原因
+python 可能被 python2 或者 python 3 代替了导致映射不到。
+
+解决方法
+命令行执行：
+
+ls -l /usr/bin/python\*
+然后会出现：
+
+```
+lrwxrwxrwx 1 root root 9 3 月 16 09:09 /usr/bin/python3 -> python3.6
+-rwxr-xr-x 1 root root 4526456 11 月 7 18:44 /usr/bin/python3.6
+-rwxr-xr-x 1 root root 4526456 11 月 7 18:44 /usr/bin/python3.6m
+lrwxrwxrwx 1 root root 10 3 月 16 09:09 /usr/bin/python3m -> python3.6m
+```
+
+我们发现确实没有 /usr/bin/python 映射。这里我选择重建映射， 我们将/usr/bin/python 映射到 /usr/bin/python3 上去， 这样间接就相当于搭建了一座桥梁到 python3.6 上，就不会发生找不到命令的问题了。
+
+我们执行：
+
+sudo ln -s /usr/bin/python3 /usr/bin/python
+然后使用 ls -l /usr/bin/python\* 再验证发现：
+
+```
+lrwxrwxrwx 1 root root 16 3 月 17 10:51 /usr/bin/python -> /usr/bin/python3
+lrwxrwxrwx 1 root root 9 3 月 16 09:09 /usr/bin/python3 -> python3.6
+-rwxr-xr-x 1 root root 4526456 11 月 7 18:44 /usr/bin/python3.6
+-rwxr-xr-x 1 root root 4526456 11 月 7 18:44 /usr/bin/python3.6m
+lrwxrwxrwx 1 root root 10 3 月 16 09:09 /usr/bin/python3m -> python3.6m
+```
+
+————————————————
+版权声明：本文为 CSDN 博主「码农小胖哥」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_35067322/java/article/details/104917602

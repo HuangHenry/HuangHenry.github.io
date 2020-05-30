@@ -17,3 +17,7 @@ keywords: 主机, 电脑
     - LaunchCSM [Disabled]->[Enabled]
     - OS Type[Other OS]-> [Windows UEFI mode]
   - 两个显示屏设置默认的为 graphics
+
+## 显示屏BIOS 设置
+
+  首选显卡 [Auto]->[CPU Graphics]

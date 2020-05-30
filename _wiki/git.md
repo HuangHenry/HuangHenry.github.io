@@ -504,6 +504,16 @@ git log --oneline | wc -l
 
 参考：[Git 代码行统计命令集](http://blog.csdn.net/Dwarven/article/details/46550117)
 
+### ssh -T git@github.com
+
+Permission denied problem(publickey)
+将 ssh key 添加到 ssh-agent
+eval "\$(ssh-agent -s)"
+
+然后将 SSH key 添加到 ssh-agent:
+ssh-add ~/.ssh/id_rsa
+<https://blog.csdn.net/isunnyvinson/article/details/52598863>
+
 ### 修改文件名时的大小写问题
 
 修改文件名大小写时，默认会被忽略（在 Windows 下是这样），让 git 对大小写敏感的方法：
@@ -581,6 +591,10 @@ git symbolic-ref --short -q HEAD
 git config --global core.autocrlf false
 可以通过调用 git config --global --list 查看当前设置
 git 提示 warning LF will be replace by CRLF,可以参考这篇 <https://www.jianshu.com/p/450cd21b36a4>
+
+git config -l
+linux 中可设置成true
+
 
 ### 解决 no man viewer handled the request
 
