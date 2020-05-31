@@ -91,3 +91,11 @@ JSON 编码解码器。
   - windows 下，直接在 user 目录中创建一个 pip 目录，如：C:\Users\xx\pip，新建文件 pip.ini。内容同上。
 
 [pip_home]: https://www.cnblogs.com/microman/p/6107879.html
+
+## xlwings 出错
+
+- xlwings==0.13.0
+- dynamic fuction 前面加一个@符号
+- xlwings import win32api error
+  - 224、225 新版本发布的有问题，回退到 223 版本即可
+  - https://blog.csdn.net/wskzgz/article/details/100984946
