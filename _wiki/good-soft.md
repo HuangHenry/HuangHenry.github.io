@@ -61,3 +61,9 @@ keywords: 软件, 推荐
  slmr.vbs -dlv # 查看windows到期时间详细信息
 
 ```
+
+
+### xyplorer
+text get("LoadTimes");
+脚本：
+窗格 显示树

@@ -11,10 +11,12 @@ mathjax: true
 topmost: true
 ---
 
+<https://www.w3cschool.cn/lme/5ryd1srk.html>
+
 **目录**
 
-* TOC
-{:toc}
+- TOC
+  {:toc}
 
 ### 超链接
 
@@ -24,7 +26,7 @@ topmost: true
 <https://mazhuang.org>
 ```
 
-[靠谱-ing](https://mazhuang.org)  
+[靠谱-ing](https://mazhuang.org)
 
 <https://mazhuang.org>
 
@@ -52,11 +54,11 @@ topmost: true
 * 无序列表项 3
 ```
 
-* 无序列表项 1
+- 无序列表项 1
 
-* 无序列表项 2
+- 无序列表项 2
 
-* 无序列表项 3
+- 无序列表项 3
 
 ```
 - [x] 任务列表 1
@@ -80,7 +82,7 @@ topmost: true
 
 **加黑**
 
-*斜体*
+_斜体_
 
 ### 标题
 
@@ -139,7 +141,7 @@ print 'Hello, World!'
 * [目录](#目录)
 ```
 
-* [目录](#目录)
+- [目录](#目录)
 
 ### Emoji
 
@@ -191,3 +193,7 @@ When $$(a \ne 0)$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 [^1]: Here is the footnote 1 definition.
+
+## markdown 参考链接
+
+<https://www.w3cschool.cn/lme/5ryd1srk.html>

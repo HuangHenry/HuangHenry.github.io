@@ -3,7 +3,7 @@ layout: post
 title: cpp运行添加库文件
 categories: Basis
 description: cpp,include
-keywords: cpp,include
+keywords: cpp,include,c++
 ---
 
 ## gcc 和 g++头文件和库路径的寻找和添加
