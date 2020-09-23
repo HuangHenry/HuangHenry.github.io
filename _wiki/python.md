@@ -115,6 +115,19 @@ https://blog.csdn.net/luke_sanjayzzzhong/article/details/83273584
 安装 jupyter menus
 python -m ipykernel install --user --name ancillary --display-name "Python (ancillary)"
 
+## 给 jupyter 添加多个 python 版本的 kernel
+
+方法 1： 通过 ipykernel 为 jupyter 添加 python 环境
+
+```{cmd}
+activate env_name
+python -m ipykernel install --name env_name
+deactivate
+```
+
+方法 2：
+conda create -n Python27 python=2.7 ipykernel 创建环境时为其安装 ipykernel
+
 ## conda 命令
 
 conda 教程
