@@ -10,5 +10,3 @@ keywords: R
 
 [Windows 安裝深度學習套件]<https://rpubs.com/skydome20/R-Note15-R_tensorflow_keras_install_windows>
 
-
-##
