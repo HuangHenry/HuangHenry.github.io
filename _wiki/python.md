@@ -115,6 +115,20 @@ https://blog.csdn.net/luke_sanjayzzzhong/article/details/83273584
 安装 jupyter menus
 python -m ipykernel install --user --name ancillary --display-name "Python (ancillary)"
 
+## conda channels 配置
+
+[]<https://www.cnblogs.com/hhbbk/p/12512105.html>
+
+conda config --show channels
+
+### 添加 Anaconda 的 TUNA 镜像
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+### 设置搜索时显示通道地址
+
+conda config --set show_channel_urls yes
+
 ## 给 jupyter 添加多个 python 版本的 kernel
 
 方法 1： 通过 ipykernel 为 jupyter 添加 python 环境
@@ -152,3 +166,31 @@ conda 教程
 - 对于可变对象，所有实例中的这个属性（也就是 Python 中的基础变量），都会指向类中定义的那个容器。
 - 这样就会导致于多个策略实例之间的数据错乱，RB、IF 策略都在往同一个列表中添加和读取东西。
 - 所以需要在 init 函数中对这些可变对象字段重新初始化，使得每个策略实例的字段是一个只属于自己的容器。
+
+## pip 出问题
+
+No module named 'pip.\_internal.cli'
+
+- 删除 user 底下的 pip 可以解决问题，或者 conda install
+
+## ipython
+
+%load_ext autoreload
+%autoreload 2
+%autosave 2
+
+## jupyter lab
+
+iid
+
+## Ubuntu18 下 pip install mysqlclient 报错 问题解决方案
+
+sudo apt-get install libmysqlclient-dev
+
+## 安装 nvm
+
+git clone https://github.com/nvm-sh/nvm.git --depth=1
+拷贝 vim ~/.profile ~/.zshrc
+
+- 安装 node
+  nvm install --lts

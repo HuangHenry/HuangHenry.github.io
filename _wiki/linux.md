@@ -155,11 +155,14 @@ lsof -c Vim
   apt-get remove openssh-server
   apt-get update
   apt-get install openssh-server
-  vi /etc/ssh/sshd_config
+  sudo i /etc/ssh/sshd_config
     修改 PasswordAuthentication no 为 PasswordAuthentication yes
     :wq 保存退出
   service ssh --full-restart
+  ### ssh 开机自动启动
+  sudo systemctl enable ssh
 ```
+
 
 ## ssh 连上时提示异常
 

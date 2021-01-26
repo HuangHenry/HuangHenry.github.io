@@ -19,6 +19,13 @@ keywords: Windows
 
 只有输入登录密码才能查看和使用电脑。如图：
 
+
+* 该链接中的方法三：另外一种方法
+本地策略-安全选项 交互式登录：计算机不活动限制
+
+https://www.jb51.net/os/win10/663055.html
+
+
 ## windows 自动更新
 
 服务，windows update 停止 禁用 恢复下面 选无操作
@@ -42,3 +49,25 @@ keywords: Windows
 - anaconda3
 - pycharm
 - teamviewer
+
+
+
+
+## 更改cmd外观设置
+首先我们更改一下外观，由于 WSL 的会话窗口配色实际上取决于 CMD 属性里颜色标签里面的配色，默认的实在是太丑了，既没有高亮字符也不清晰，严重影响开发效率。
+
+这就需要用到一个开源的 CMD 配色工具：[ColorTool](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fterminal%2Freleases%2Ftag%2F1708.14008)
+
+下载解压后，用 CMD 打开到解压路径，然后运行下列的命令，CMD 的界面就会改变了，选一个自己觉得好看的。
+
+colortool.exe -b deuteranopia
+colortool.exe -b OneHalfDark
+colortool.exe -b OneHalfLight
+colortool.exe -b solarized_dark
+colortool.exe -b solarized_light
+然后重新打开 Ubuntu 窗口，就会发现配色也被修改了。如果不满意，还可以打开终端的设置属性界面，微调下字体和光标颜色等。这里建议将 ”将Ctr+Shift+ C/V用作复制/粘贴的快捷键” 给勾上，光标形状设置为实心框，字体设置为 Consolas。
+
+作者：希希里之海
+链接：https://www.jianshu.com/p/3e627ff45ccb
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
