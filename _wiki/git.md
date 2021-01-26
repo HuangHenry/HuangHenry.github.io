@@ -641,6 +641,11 @@ Host github.com
 
 ```
 
+# gitlab ping不通
+修改host 添加ip 与gitlab hostname的映射
+127.0.0.12  gitlab.com
+
+
 - 将 **ssh key**生成的 id_rsa_github.pub 内容复制到 http://github.com/settings/ssh
 
 [参考链接](http://xuyuan923.github.io/2014/11/04/github-gitlab-ssh/)

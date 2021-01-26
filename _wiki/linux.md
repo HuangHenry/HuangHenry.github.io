@@ -147,6 +147,7 @@ lsof -c Vim
 - tmux
 - [z.lua](https://www.jianshu.com/p/a56766f2b80e)
 - tldr
+		npm install -g tldr
 
 ## WSL 开通 ssh 端口
 
