@@ -183,6 +183,19 @@ No module named 'pip.\_internal.cli'
 
 iid
 
+jupyter lab 弹出错误
+
+https://github.com/dotnet/interactive/issues/172
+jupyter notebook --generate-config
+
+c.NotebookApp.use_redirect_file=False
+
+
+## jupyter remote connect password
+<https://blog.csdn.net/qq_34419607/article/details/109177125>
+<https://www.pythonf.cn/read/152776>
+
+
 ## Ubuntu18 下 pip install mysqlclient 报错 问题解决方案
 
 sudo apt-get install libmysqlclient-dev
