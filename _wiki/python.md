@@ -183,12 +183,17 @@ No module named 'pip.\_internal.cli'
 
 iid
 
-jupyter lab 弹出错误
+## jupyterlab jupyter lab 弹出错误
 
 https://github.com/dotnet/interactive/issues/172
 jupyter notebook --generate-config
 
 c.NotebookApp.use_redirect_file=False
+
+* jupyter lab 可能失败
+*运行该命令 jupyter-lab build
+no 
+kill the process of jupyter lab
 
 
 ## jupyter remote connect password
@@ -207,3 +212,58 @@ git clone https://github.com/nvm-sh/nvm.git --depth=1
 
 - 安装 node
   nvm install --lts
+
+
+https://cnodejs.org/topic/5338c5db7cbade005b023c98
+
+.zshrc中加入这个命令
+export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+
+
+node 镜像
+
+
+
+## ipython completer not working
+
+* jedi makes complete too slowly
+*  Generate config
+  ipython profile create
+* Edit config file in vim
+  no use ->  vim .ipython/profile_default/ipython_kernel_config.py
+  useful for me -> vim .ipython/profile_default/ipython_config.py
+  c.Completer.use_jedi = False
+
+
+
+  ## jupyter kernel  jupyterlab
+  source activate myenv
+ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+<https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook>
+
+
+## 错误UserWarning: semaphore_tracker: There appear to be 4 leaked semaphores to clean up at shutdown
+
+最近在跑代码的时候总是会遇到这个错误，明明是UserWarning，但是程序会停止运行，错误提示为
+
+multiprocessing/semaphore_tracker.py:144: UserWarning: semaphore_tracker: There appear to be 4 leaked semaphores to clean up at shutdown
+  len(cache))
+查了很多资料，这个问题似乎很早之前就有，最早能找到的是在2013年，但是没有什么很好的解决方法，最终发现，需要忽略这个警告就可以了，在运行代码之前加入这一句，希望能帮到大家，我被这个错误耽误了太长时间了
+
+export PYTHONWARNINGS='ignore:semaphore_tracker:UserWarning'
+
+原文链接：<https://blog.csdn.net/bxg1065283526/article/details/108403618>
+
+
+## jupyterlab export to pdf
+
+中文无法识别
+修改 
+~/anaconda3/share/jupyter/nbconvert/templates/latex/base.tex.j2
+添加一行
+\usepackage[UTF8,heading=true]{ctex}
+
+
+https://nbconvert.readthedocs.io/en/latest/customizing.html
+
+https://github.com/jupyterlab/jupyterlab/issues/8962
