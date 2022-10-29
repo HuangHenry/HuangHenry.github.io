@@ -73,3 +73,10 @@ colortool.exe -b solarized_light
 ```{cmd}
     mklink /j  d:/linked_short_name_folder  d:/src_original_folder
 ```
+
+
+https://www.windstock.com.cn/
+
+
+## cherry 机械键盘
+* Fn键切换，长按Fn键3-5秒

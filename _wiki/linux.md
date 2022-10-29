@@ -253,3 +253,7 @@ lrwxrwxrwx 1 root root 10 3 月 16 09:09 /usr/bin/python3m -> python3.6m
 ————————————————
 版权声明：本文为 CSDN 博主「码农小胖哥」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/qq_35067322/java/article/details/104917602
+
+
+# local user install vim
+https://en.dlyang.me/install-vim-for-local-user/

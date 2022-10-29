@@ -99,6 +99,9 @@ JSON 编码解码器。
 - xlwings import win32api error
   - 224、225 新版本发布的有问题，回退到 223 版本即可
   - https://blog.csdn.net/wskzgz/article/details/100984946
+			pip install --upgrade pywin32==224
+			pip install --upgrade wpyin32==223
+
 
 ## jupyterlab extension not working
 
@@ -267,3 +270,31 @@ export PYTHONWARNINGS='ignore:semaphore_tracker:UserWarning'
 https://nbconvert.readthedocs.io/en/latest/customizing.html
 
 https://github.com/jupyterlab/jupyterlab/issues/8962
+
+
+## pycharm
+* terminal font tab error
+* 取掉勾选use conse font instead of the default
+
+## conda install nodejs
+conda install -c conda-forge nodejs
+conda install -c conda-forge/label/gcc7 nodejs
+conda install -c conda-forge/label/cf201901 nodejs
+conda install -c conda-forge/label/cf202003 nodejs
+node 12
+
+
+
+## jupyter lab 插件
+
+* toc
+* vim
+* code formatter
+    <https://jupyterlab-code-formatter.readthedocs.io/en/latest/installation.html#installation-step-1-installing-the-plugin-itself>
+
+
+## 可以升级到最新的jupyterlab 3.0+
+* 好用
+
+## pycharm 控制台中文乱码
+<https://www.yisu.com/zixun/222275.html>
