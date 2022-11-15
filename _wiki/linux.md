@@ -257,3 +257,9 @@ lrwxrwxrwx 1 root root 10 3 月 16 09:09 /usr/bin/python3m -> python3.6m
 
 # local user install vim
 https://en.dlyang.me/install-vim-for-local-user/
+
+
+
+# 文件夹权限管理
+
+https://blog.csdn.net/qq_42982742/article/details/103690119
