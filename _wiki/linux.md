@@ -213,7 +213,7 @@ exclude_sysinfo_plugins = Temperature, Network
 
 ## ubuntu 新装配置
 
-https://zhuanlan.zhihu.com/p/56253982
+[unbuntu配置](https://zhuanlan.zhihu.com/p/56253982)
 
 ## ubuntu python3 配置
 
@@ -256,10 +256,15 @@ lrwxrwxrwx 1 root root 10 3 月 16 09:09 /usr/bin/python3m -> python3.6m
 
 
 # local user install vim
-https://en.dlyang.me/install-vim-for-local-user/
+[vim](https://en.dlyang.me/install-vim-for-local-user/)
 
 
 
 # 文件夹权限管理
 
-https://blog.csdn.net/qq_42982742/article/details/103690119
+[linux文件夹权限管理](https://blog.csdn.net/qq_42982742/article/details/103690119)
+
+drwxrwxrwx
+d directory
+rwx: user|group|other previlege
+chmod rwx 
