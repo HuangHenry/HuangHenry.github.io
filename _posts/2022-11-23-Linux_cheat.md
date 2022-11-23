@@ -6,7 +6,9 @@ description: cheat
 keywords: linux, cheat
 ---
 
-命令行的速记工具 cheat, 原文作者: 张志强 , 2021-06-01 , 共 1145 字 cheat 提供命令行的速记记录，在命令行下，随时增加笔记随时查看，用的时间越长越强大！[原文链接地址](https://zhiqiang.org/it/cheat-cheatsheets.html)
+文章 转自 张志强 [原文链接地址](https://zhiqiang.org/it/cheat-cheatsheets.html)：
+
+命令行的速记工具 cheat, 在命令行下，随时增加笔记随时查看，用的时间越长越强大！
 
 ### 安装 cheat 和 cheatsheets
 首先安装 cheat （注意是通过 pip 而不是 apt ），如果没有权限可以添加 --user 安装到自己的目录：
