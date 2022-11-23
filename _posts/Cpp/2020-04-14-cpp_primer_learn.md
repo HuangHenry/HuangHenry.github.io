@@ -6,6 +6,9 @@ description: C++ Primer知识点总结
 keywords: C++
 ---
 
+c++ primer 知识点
+
+
 ## Part III Tools for Class Authors
 
 ### chapter 13 Copy Control
