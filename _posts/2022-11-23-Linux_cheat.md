@@ -32,6 +32,7 @@ git clone https://gitee.com/zhiqiang.org/cheatsheets .
 2、用法
 查看速记：
 
+    ```
     $ cheat grep
     "常规用法，显示所有匹配的行，-r 表示 recursive 递归搜索。支持正则表达式
     grep 'xxx' <file_or_path> -r
@@ -47,6 +48,7 @@ git clone https://gitee.com/zhiqiang.org/cheatsheets .
     grep -i 'xxx' src -r
     " 显示匹配行的上下文，-A2 上面2行，-B3 下面3行，-C4 上下各4行。
     grep -A2 -B3 -C4 'xxx' src
+    ```
 
 
 编辑速记：
