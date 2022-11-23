@@ -60,7 +60,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-paginate: 10
+paginate: 20
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
