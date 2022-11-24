@@ -22,7 +22,7 @@ layout: default
           {% if site.components..enabled %}
           <span class="meta-info">word_count
             <span class="octicon octicon-clock"></span>
-            ¹² {{ page.content | strip_html | strip_newlines | remove: " " | size }} ×Ö£¬Ô¼ {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} ·ÖÖÓ
+            total {{ page.content | strip_html | strip_newlines | remove: " " | size }} word, about {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minute
           </span>
           {% endif %}
         </div>
