@@ -23,7 +23,7 @@ components:
   side_bar_repo:
     enabled: true
     limit: 6
-	
+    
 side_bar_repo_limit: 5
 
 # ---------------- #
