@@ -17,13 +17,12 @@ encoding: "utf-8"
 since: 2020
 
 components:
+  word_count: 
+    enabled: true
 
-	word_count: 
-		enabled: true
-
-	side_bar_repo:
-		enabled: true
-		limit: 6
+  side_bar_repo:
+    enabled: true
+    limit: 6
 	
 side_bar_repo_limit: 5
 
