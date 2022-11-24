@@ -17,13 +17,17 @@ encoding: "utf-8"
 since: 2020
 
 components:
+  share:
+    enabled: false
+    hide-platforms: qq,facebook
+
   word_count: 
     enabled: true
 
   side_bar_repo:
     enabled: true
     limit: 6
-    
+
 side_bar_repo_limit: 5
 
 # ---------------- #

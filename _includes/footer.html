@@ -32,7 +32,9 @@
       <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a>
     </div>
     <!-- / footer -->
+    {% if site.components.share.enabled %}
     <script src="{{ site.url }}/assets/vendor/share.js/dist/js/share.min.js"></script>
+    {% endif %}
     <script src="{{ site.url }}/assets/js/geopattern.js"></script>
     <script src="{{ site.url }}/assets/js/prism.js"></script>
     <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/prism.css">
