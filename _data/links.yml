@@ -5,6 +5,9 @@
 - name: 张君宝的微课堂
   url: https://zhiqiang.org/
   src: www
+- name: 程序员导航
+  url: http://www.cxy521.com/
+  src: www
 
 - name: 只宁静不致远
   url: http://zxning.github.io
