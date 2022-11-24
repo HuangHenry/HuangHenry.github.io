@@ -9,17 +9,7 @@
   url: http://www.cxy521.com/
   src: www
 
-- name: 只宁静不致远
-  url: http://zxning.github.io
-  src: life
 
-- name: Blog Something
-  url: http://chenxiaoyoyo.github.io
-  src: life
-
-- name: 日新亭
-  url: http://www.fengerzh.com/
-  src: life
 
 - name: ZZY补完计划
   url: https://zzycreate.github.io/
@@ -39,12 +29,11 @@
 - name: PRICE ACTION LAB BLOG
   url: https://www.priceactionlab.com/Blog/
   src: www
+
 - name: QuantsPortal
   url: http://www.quantsportal.com/
   src: www
-- name: roycheng
-  url: http://roycheng.cn/
-  src: www
+
 - name: Flirting with Models
   url: https://blog.thinknewfound.com/
   src: www
