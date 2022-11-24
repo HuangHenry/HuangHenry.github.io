@@ -19,8 +19,8 @@ layout: default
             <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
           </span>
           {% endfor %}
-          {% if site.components..enabled %}
-          <span class="meta-info">word_count
+          {% if site.components.word_count.enabled %}
+          <span class="meta-info">
             <span class="octicon octicon-clock"></span>
             total {{ page.content | strip_html | strip_newlines | remove: " " | size }} word, about {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minute
           </span>
