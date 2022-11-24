@@ -15,6 +15,7 @@ encoding: "utf-8"
 
 # 页面左下角显示的年份
 since: 2020
+github: 
 
 components:
   share:
