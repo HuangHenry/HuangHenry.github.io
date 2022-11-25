@@ -15,8 +15,12 @@ encoding: "utf-8"
 
 # 页面左下角显示的年份
 since: 2020
-# github: 
-
+repository: huanghenry/huanghenry.github.io
+# 对 css 和 js 资源的 cdn 加速配置
+cdn:
+    jsdelivr:
+        enabled: false
+# 可选组件配置
 components:
     # 分享
     # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
