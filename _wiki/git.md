@@ -1,7 +1,9 @@
 ---
 layout: wiki
 title: Git
-categories: Git
+cate1: linux
+cate2: Git
+# categories: Git
 description: Git 常用操作记录。
 keywords: Git, 版本控制
 ---

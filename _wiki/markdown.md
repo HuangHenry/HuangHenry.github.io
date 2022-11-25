@@ -1,7 +1,9 @@
 ---
 layout: wiki
 title: Markdown
-categories: Markdown
+cate1: Markdown
+cate2:
+# categories: Markdown
 description: Markdown 常用语法示例。
 keywords: Markdown
 mermaid: true

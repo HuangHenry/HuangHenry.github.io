@@ -1,7 +1,9 @@
 ---
 layout: wiki
 title: Cmder Hyper 配置
-categories: [linux, cmder]
+cate1: linux
+cate2: cmder
+# categories: [linux, cmder]
 description: cmder,hyper
 keywords: cmder, linux,shell,hyper
 ---
