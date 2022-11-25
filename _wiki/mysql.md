@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: MySQL
-cate1: Linux
-cate2:
-categories: [MySQL, Database]
+cate1: linux
+cate2: mysql
+# categories: [MySQL, Database]
 description: MySQL Wiki
 keywords: MySQL
 ---

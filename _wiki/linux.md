@@ -1,8 +1,8 @@
 ---
 layout: wiki
 title: Linux/Unix/WSL
-cate1: Linux
-cate2: 
+cate1: linux
+cate2: unix
 categories: Linux
 description: 类 Unix 系统下的一些常用命令和用法。
 keywords: Linux,WSL
