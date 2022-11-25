@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: Tmux 使用梳理
+cate1: linux
+cate2: tmux
 categories: [linux, tmux]
 description: tmux
 keywords: keyword1, keyword2

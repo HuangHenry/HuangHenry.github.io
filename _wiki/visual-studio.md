@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: Visual Studio
+cate1: Tools
+cate2: 
 categories: Tools
 description: Visual Studio 快捷键和小技巧。
 keywords: Visual Studio

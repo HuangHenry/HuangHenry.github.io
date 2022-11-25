@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: Scientific web
+cate1: Tools
+cate2:
 categories: [Tools]
 description: 科学上网
 keywords: website

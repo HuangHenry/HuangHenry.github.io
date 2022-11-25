@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: R
+cate1: Program
+cate2: R
 categories: R
 description: R 常用模块及资源记录。
 keywords: R

@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: Windows
+cate1: Tools
+cate2:
 categories: [Tools]
 description: Windows 使用技巧
 keywords: Windows
