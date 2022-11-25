@@ -2,7 +2,7 @@
 layout: wiki
 title: Windows
 cate1: Tools
-cate2:
+cate2: windows
 categories: [Tools]
 description: Windows 使用技巧
 keywords: Windows

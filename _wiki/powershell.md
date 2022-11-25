@@ -2,7 +2,7 @@
 layout: wiki
 title: PowerShell
 cate1: Windows
-cate2
+cate2:
 categories: Windows
 description: 使用 PowerShell 打造 Windows 下的顺手终端。
 keywords: Windows, PowerShell
