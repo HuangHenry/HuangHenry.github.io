@@ -71,7 +71,19 @@
     <script src="{{ site.url }}/assets/js/main.js"></script>
 
     {% if site.url contains 'mazhuang.org' %}
-    <script data-ad-client="ca-pub-7093222719567591" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7093222719567591" crossorigin="anonymous"></script>
+    {% endif %}
+
+    {% if site.google.analytics_id %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ site.google.analytics_id }}');
+    </script>
     {% endif %}
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
@@ -87,6 +99,7 @@
                 {% for nav in site.navs %}
                 <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
                 {% endfor %}
+                <a class="mobile-hidden" href="{{ site.url }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
             </nav>
         </div>
     </header>
